@@ -8,6 +8,13 @@ public abstract class DomesticatedAnimal extends Animal {
     // Stock Keeping Unit - a unique identifier for cataloging and inventory purposes
     public abstract String sku();
 
+    public String habitat() {
+      return "House";
+    }
+
+
+    
+
     public String toString() {
         return String.format("%s %s.", super.toString(), "Domesticated");
     }

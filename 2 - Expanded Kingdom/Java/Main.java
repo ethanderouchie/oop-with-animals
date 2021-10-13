@@ -14,5 +14,7 @@ class Main {
         for (var animal: animals) {
             System.out.println(animal);
         }
+
+        
     }
 }

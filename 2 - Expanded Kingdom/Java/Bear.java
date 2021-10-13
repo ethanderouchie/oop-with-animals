@@ -1,4 +1,4 @@
-public class Bear extends Animal {
+public class Bear extends WildAnimal {
 
     public Bear() {
       super();
@@ -10,6 +10,10 @@ public class Bear extends Animal {
 
     public String species() {
       return "Bear";
+    }
+
+    public String habitat() {
+      return "Cave";
     }
 
     public int numberOfLegs() {

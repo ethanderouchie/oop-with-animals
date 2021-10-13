@@ -20,7 +20,9 @@ public abstract class Animal {
         return this._name;
     }
 
+    public abstract String habitat();
+
     public String toString() {
-        return String.format("Hi, I'm %s, a %s.", this.name(), this.species());
+        return String.format("Hi, I'm %s, a %s. I live in a %s.", this.name(), this.species(), this.habitat());
     }
 }

@@ -1,4 +1,4 @@
-public class Skunk extends Animal {
+public class Skunk extends WildAnimal {
     // Default constructor
     public Skunk() {
         super();
@@ -17,7 +17,9 @@ public class Skunk extends Animal {
         return 4;
     }
 
-    public String toString() {
-        return String.format("Hi, I'm %s, a %s.", this.name(), this.species());
+    public String habitat() {
+      return "Den";
     }
+ 
+    
 }
