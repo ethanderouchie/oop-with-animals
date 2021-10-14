@@ -1,2 +1,2 @@
 language = "java10"
-run = "pushd \"2 - Expanded Kingdom/Java\";javac Main.java; java Main; popd"
+run = "pushd \"3 - Animal Shelter/Java\";javac Main.java; java Main; popd"

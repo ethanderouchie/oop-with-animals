@@ -2,7 +2,7 @@ import java.util.*;
 import java.text.DecimalFormat;
 
 class Main {
-    static final DecimalFormat priceFormatter = new DecimalFormat("$###,###.00 Ea");
+    static final DecimalFormat priceFormatter = new DecimalFormat("$###,###.00");
 
     public static void main(String[ ] args) {
         // Create a bunch of animals
@@ -17,6 +17,7 @@ class Main {
         // Initialize an inventory of things that we can sell.  It's just a list of sellable items.
         var inventory = new ArrayList<ISellable>();
         inventory.add(new CatFood());
+        inventory.add(new Bath());
 
         // Introduce the animals
         printHeading("Say hello to all our animals in the shelter!");
@@ -31,8 +32,8 @@ class Main {
         // List the items for sale
         printHeading("On SALE meow!");
         for (var item: inventory) {
-            System.out.println(String.format("%-10s %-35s %10s", 
-                item.sku(), item.description(), priceFormatter.format(item.unitPrice())));
+            System.out.println(String.format("%-10s %-35s %10s %1s", 
+                item.sku(), item.description(), priceFormatter.format(item.unitPrice()), item.lengthOfTime()));
         }
     }
 

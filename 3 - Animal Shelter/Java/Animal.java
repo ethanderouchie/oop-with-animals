@@ -23,4 +23,8 @@ public abstract class Animal {
     public String toString() {
         return String.format("Hi, I'm %s, a %s.", this.name(), this.species());
     }
+
+    public String lengthOfTime() {
+      return "";
+    }
 }

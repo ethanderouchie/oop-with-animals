@@ -10,4 +10,8 @@ public class CatFood implements ISellable {
     public String sku() {
         return "cf0001";
     }
+
+    public String lengthOfTime() {
+      return "/ ea";
+    }
 }

@@ -7,4 +7,6 @@ public interface ISellable {
 
     // Stock Keeping Unit - a unique identifier for cataloging and inventory purposes
     public String sku();
+
+    public String lengthOfTime();
 }
